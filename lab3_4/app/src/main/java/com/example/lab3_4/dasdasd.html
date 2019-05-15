@@ -1,0 +1,645 @@
+<!DOCTYPE html><!-- START of: finna - layout/layout.phtml -->
+<html lang="fi">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/images/webapp-icon-180.png?_=1542973264">
+    <link rel="manifest" href="/themes/custom/images/manifest.json?_=1556265849">
+
+    <meta http-equiv="Content-Type" content="text&#x2F;html&#x3B;&#x20;charset&#x3D;UTF-8">
+    <meta name="Generator" content="Finna">    <title>Lapin kirjaston Finna | Lapin kirjaston Finna</title>        <link href="&#x2F;cache&#x2F;567a7fcfe1fa5204a4911df0eaf22bb3.min.css" media="all" rel="stylesheet" type="text&#x2F;css">
+    <link href="&#x2F;themes&#x2F;bootstrap3&#x2F;css&#x2F;print.css" media="print" rel="stylesheet" type="text&#x2F;css">
+    <!--[if lt IE 10]><link href="&#x2F;cache&#x2F;69eae5d5f28fd10602f62961bc6b9a44.min.css" media="" rel="stylesheet" type="text&#x2F;css"><![endif]-->
+    <link href="&#x2F;themes&#x2F;custom&#x2F;images&#x2F;favicon.ico&#x3F;_&#x3D;1528886884" rel="shortcut&#x20;icon" type="image&#x2F;x-icon">
+    <link href="&#x2F;Search&#x2F;OpenSearch&#x3F;method&#x3D;describe" rel="search" type="application&#x2F;opensearchdescription&#x2B;xml" title="Haku&#x20;kirjastoluettelosta">
+    <!--[if lte IE 9]><link href="&#x2F;themes&#x2F;finna2&#x2F;css&#x2F;ie9-and-lower.css" media="screen" rel="stylesheet" type="text&#x2F;css"><![endif]-->
+    <!--[if lt IE 9]><link href="&#x2F;themes&#x2F;finna2&#x2F;css&#x2F;ie8-and-lower.css" media="screen" rel="stylesheet" type="text&#x2F;css"><![endif]-->                    <script type="text&#x2F;javascript">
+    //<!--
+    path = '';module = 'search';action = 'home';
+    //-->
+</script>
+    <script type="text&#x2F;javascript" src="&#x2F;cache&#x2F;530974fc19456725607ec587fb5a4cbd.min.js"></script>
+    <!--[if lt IE 9]><script type="text&#x2F;javascript" src="&#x2F;themes&#x2F;finna2&#x2F;js&#x2F;vendor&#x2F;event-stub.js&#x3F;_&#x3D;1556265849"></script><![endif]-->
+    <script type="text&#x2F;javascript">
+    //<!--
+    var userIsLoggedIn = false;
+    //-->
+</script>
+    <script type="text&#x2F;javascript">
+    //<!--
+    var keepAliveInterval = 300
+    //-->
+</script>
+    <script type="text&#x2F;javascript">
+    //<!--
+    VuFind.path = '';
+VuFind.defaultSearchBackend = 'Solr';
+VuFind.addTranslations({"change_hold_success": "Varaus muutettu","show_more": "Lisää","show_less": "Vähemmän","Organisation": "Kirjastot","location-service": "Kirjastokartta","login": "Kirjaudu sisään","none_selected": "Mikä tahansa","selected": "valittu","shelf_location": "Hylly","request_change_done": "Muutospyyntö lähetetty. Muutokset näkyvät vasta, kun pyyntö on hyväksytty.","other_records": "Muita aineistoja","records": "Aineistoja","search_placeholder": "Etsi","add_tag_success": "Tagit tallennettu","bulk_email_success": "Tietueet lähetetty","bulk_noitems_advice": "Ei valittuja tietueita. Rastita tietueen viereinen laatikko.","bulk_save_success": "Tietueet tallennettu onnistuneesti","close": "sulje","collection_empty": "Arkistoon/kokoelmaan ei sisälly tietueita.","error_occurred": "Tapahtui virhe","go_to_list": "Näytä lista","libphonenumber_invalid": "Virheellinen puhelinnumero","libphonenumber_invalidcountry": "Virheellinen maakoodi","libphonenumber_invalidregion": "Virheellinen aluekoodi:","libphonenumber_notanumber": "Annettu arvo ei näyttänyt puhelinnumerolta","libphonenumber_toolong": "Annettu arvo on liian pitkä ollakseen puhelinnumero","libphonenumber_tooshort": "Annettu arvo on liian lyhyt ollakseen puhelinnumero","libphonenumber_tooshortidd": "Liian lyhyt puhelinnumero maakoodin jälkeen","loading": "Ladataan","more": "lisää","number_thousands_separator": " ","sms_success": "Viesti lähetetty.","radiusPrefix": "Säde","circleCaption": "Rajaa alue","clearCaption": "Tyhjennä rajaukset","removeCaption": "Tyhjennä","map_zoom_in": "Lähennä","map_zoom_out": "Loitonna","street_search_geolocation_inactive": "Selaimesi asetukset estävät paikannuksen.","street_search_checking_for_geolocation": "Tarkistetaan sijaintia","street_search_geolocation_available": "Selaimesi tukee paikannusta. Haetaan sijaintiasi...","street_search_geolocation_position_unavailable": "Sijaintisi ei ole tällä hetkellä saatavissa.","street_search_geolocation_other_error": "Sijaintisi haku epäonnistui tuntemattomasta syystä. Tarkista että selaimesi tukee paikannusta.","street_search_timeout": "Paikannus keskeytettiin, koska se kesti liian kauan. Haku toimii parhaiten ulkotiloissa.","street_search_no_streetname_found": "street_search_no_streetname_found","street_search_reversegeocode_unavailable": "street_search_reversegeocode_unavailable","street_search_searching_for": "street_search_searching_for","street_search_coordinates_found": "Sijaintisi on löydetty.","street_search_coordinates_found_accuracy_bad": "Sijaintisi on löydetty, mutta paikannuksen tarkkuus voi olla huono.","Prev": "Edellinen","Next": "Seuraava","\'Phone number invalid\'": "Virheellinen puhelinnumero","\'Invalid country calling code\'": "Virheellinen maakoodi","\'Invalid region code\'": "Virheellinen aluekoodi:","\'The string supplied did not seem to be a phone number\'": "Annettu arvo ei näyttänyt puhelinnumerolta","\'The string supplied is too long to be a phone number\'": "Annettu arvo on liian pitkä ollakseen puhelinnumero","\'The string supplied is too short to be a phone number\'": "Annettu arvo on liian lyhyt ollakseen puhelinnumero","\'Phone number too short after IDD\'": "Liian lyhyt puhelinnumero maakoodin jälkeen","autocomplete_phrase": "Hae täsmälleen","autocomplete_section_suggestion": "Ehdotukset","autocomplete_section_facet": "Rajaukset","Title": "Hae otsikoista","Author": "Hae tekijöistä","Subject": "Hae aiheista"});
+    //-->
+</script>          <!-- START of: finna - layout/Additions/general-post-head.phtml -->
+
+    <!-- END of: finna - layout/Additions/general-post-head.phtml -->
+</head>
+<body class="template-dir-search template-name-home ">
+<header class="hidden-print">
+    <!-- START of: finna - Helpers/cookie-consent.phtml -->
+    <div class="container-fluid cookie-consent">
+        <div class="cookie-consent-text">
+            Tämä sivusto käyttää evästeitä toimiakseen mahdollisimman hyvin. <a href="/Content/privacy#cookies">Lue lisää evästeistä</a>.  </div>
+        <div class="nav navbar-nav nav-absolute cookie-consent-button">
+            <button class="btn btn-primary cookie-consent-dismiss" aria-label="Hyväksy evästeet">OK</button>
+        </div>
+    </div>
+    <!-- END of: finna - Helpers/cookie-consent.phtml -->
+    <div class="container-fluid navbar">
+        <div>
+            <span class="sr-only"><a class="sr-only" href="#searchForm_lookfor">Siirry hakuun</a></span>
+            <a class="sr-only" href="#content">Siirry sisältöön</a>
+            <!-- START of: finna - navibar.phtml -->
+            <div role="navigation" class="finna-navbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-collapse" aria-label="P&#xE4;&#xE4;navigaatio" aria-expanded="false">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    <a class="navbar-brand" href="/"><!-- START of: finna - navibar-logo.phtml -->
+                        <span class="sr-only">Koti</span>
+                        <img src="/themes/custom/images/finna-logo.png?_=1528886770" alt="Site Logo" class="navbar-logo" aria-hidden="true" />
+                        <!-- END of: finna - navibar-logo.phtml -->
+                    </a>  </div>
+                <div class="collapse navbar-collapse" id="header-collapse">
+                    <ul role="menubar" class="nav navbar-nav navbar-main">
+                        <li class="dropdown" id="menu_search">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-nav-menu_search" aria-hidden="true"></i>Haku <b class="caret" aria-hidden="true"></b></a>
+                            <ul role="group" class="dropdown-menu" aria-labelledby="menu_search">
+                                <li>
+                                    <a  role="menuitem"  href="/Search/Advanced">
+                                        <div>Tarkennettu haku</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  role="menuitem"  href="/Browse/Home">
+                                        <div>Selaa luetteloa</div>
+                                        <div class="description" role="note">Selaa avainsanojen, tekijän, aiheen, genren, alueen tai aikakauden mukaan.</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  role="menuitem"  href="/Search/History">
+                                        <div>Hakuhistoria</div>
+                                        <div class="description" role="note">Istuntokohtainen hakuhistoriasi. Kirjautumalla voit tallentaa hakusi.</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a  href="/Content/help"><i class="fa fa-nav-menu_help" aria-hidden="true"></i>Ohje</a></li>
+                        <li class="dropdown" id="menu_asioi">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-nav-menu_asioi" aria-hidden="true"></i>Asioi kirjastossa <b class="caret" aria-hidden="true"></b></a>
+                            <ul role="group" class="dropdown-menu" aria-labelledby="menu_asioi">
+                                <li>
+                                    <a  role="menuitem"  href="/Content/kayttosaannot">
+                                        <div>Kirjaston käyttö</div>
+                                        <div class="description" role="note">Tietoa kirjaston käytöstä ja maksuista.</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  role="menuitem"  href="/Content/palvelut">
+                                        <div>Palvelut</div>
+                                        <div class="description" role="note">Tutustu kirjastojen palveluihin.</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  role="menuitem"  href="/Content/lapsille">
+                                        <div>Lapsille, nuorille, kouluille ja vanhemmille</div>
+                                        <div class="description" role="note">Tietoa kirjastojen palveluista lapsille ja nuorille.</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  role="menuitem"  href="/Content/saavutettavuus">
+                                        <div>Saavutettava kirjasto</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  role="menuitem"  href="/Content/lappi">
+                                        <div>Lappi ja kotiseutukokoelma</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  role="menuitem"  href="/Content/saame">
+                                        <div>Saamelainen erikoiskirjasto</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  role="menuitem"  href="https://lapinkirjasto.finna-test.fi/Feedback/Form/AcquisitionRequest">
+                                        <div>Hankintaehdotus</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a  href="/OrganisationInfo/Home"><i class="fa fa-nav-menu_kirjastot" aria-hidden="true"></i>Kirjastot ja palvelut</a></li>
+                        <li><a  href="/Content/eaineisto"><i class="fa fa-nav-menu_e-aineistot" aria-hidden="true"></i>E-aineistot</a></li>
+                        <li>
+                            <a  role="menuitem" id="feedback-link" href="/Feedback/Home">Palaute</a>
+                        </li>
+                        <!-- START of: finna - layout/Additions/header-navibar.phtml -->
+                        <!-- add li elements with class custom to match style if you need links after language options -->
+                        <!--
+                        <li class="custom">
+                          <a href="" target="_blank">≤?=$this->transEsc('menu_translate');?></a>
+                        </li>....
+                        -->
+                        <!-- END of: finna - layout/Additions/header-navibar.phtml -->
+                    </ul>
+                    <ul role="menubar" class="nav navbar-nav lang">
+                        <li class="lang">
+                            <a role="menuitem" class="preserve-anchor" href="https&#x3A;&#x2F;&#x2F;lapinkirjasto.finna.fi&#x2F;&#x3F;lng&#x3D;en-gb">English</a>
+                        </li>
+                    </ul>
+                    <ul role="menu" class="nav navbar-nav nav-login">
+                        <li class="nav-login" id="loginOptions-navi">
+                            <div>
+                                <a href="/MyResearch/UserLogin" class="btn btn-primary btn-uppercase" data-lightbox data-lightbox-onclose="window.location.href='&#x2F;MyResearch&#x2F;Home'"><i class="fa fa-user fa-lg" aria-hidden="true"></i><span class="login-text">Kirjaudu sisään</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul role="menubar" aria-label="Oma tili" class="nav navbar-nav nav-absolute">
+                    <li id="loginOptions">
+                        <div>
+                            <a href="/MyResearch/UserLogin" class="btn btn-primary btn-uppercase" data-lightbox data-lightbox-onclose="window.location.href='&#x2F;MyResearch&#x2F;Home'"><i class="fa fa-user fa-lg" aria-hidden="true"></i><span class="login-text">Kirjaudu sisään</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- END of: finna - navibar.phtml -->
+        </div>
+    </div>
+</header>
+<section role="search" class="searchContent">
+    <h1 class="sr-only">Haku</h1>
+    <a class="btn btn-primary btn-uppercase floating-feedback-btn hidden-xs" href="/Feedback/Home">Palaute</a>
+    <div class="search-form-container ">
+        <div class="container">
+            <div class="logo clearfix">
+                <!-- START of: finna - search/logosection.phtml -->
+                <!-- END of: finna - search/logosection.phtml -->
+            </div>
+            <div class="introduction">
+                <div class="introduction clearfix">
+                    <!-- START of: finna - search/introductiontext.phtml -->
+                    <div>
+                        <h1 class="introductionText">Tervetuloa Lapin kirjastoon</h1>    </div>
+                    <!-- END of: finna - search/introductiontext.phtml -->
+                </div>
+            </div>
+
+            <!-- START of: finna - search/searchbox.phtml -->
+            <nav class="nav searchbox hidden-print">
+                <div class="searchbox-home searchbox-columns">
+                    <div class="search">
+                        <form id="searchForm" role="search" class="searchForm navbar-form navbar-left  " method="get" action="/Search/Results" name="searchForm" autocomplete="off">
+                            <label for="searchForm_lookfor" class="sr-only" hidden>Hae</label>
+                            <input class="searchForm_lookfor form-control search-query autocomplete-finna searcher:Solr tab:Solr handlers:Title|Author|Subject phrase:1" placeholder="Hae..." id="searchForm_lookfor" type="text" name="lookfor" value=""/>
+                            <span class="clear-button hidden"></span>
+                            <div class="dropdown form-control type-dropdown">
+                                <input id="searchForm_type" type="hidden" name="type" value="AllFields" class="searchForm_type" />
+                                <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Rajaa hakua" data-toggle="dropdown"><span>Kaikki osumat</span><b class="caret"></b></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="menuitem">
+                                        <input type="hidden" value="AllFields" />
+                                        <a class="select-type" href="#">Kaikki osumat</a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <input type="hidden" value="Title" />
+                                        <a class="select-type" href="#">Otsikko</a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <input type="hidden" value="Author" />
+                                        <a class="select-type" href="#">Tekijä</a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <input type="hidden" value="Subject" />
+                                        <a class="select-type" href="#">Aihe</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="submit" class="btn btn-primary "><i class="fa fa-search" aria-hidden="true"></i> <span class="sr-only">Hae</span></button>
+
+                        </form>
+                    </div>
+                    <div class="search-tooltip">
+                        <button aria-label="Hakuohje" class="tooltip-button tooltip-search-local pull-right hidden-xs" data-toggle="tooltip" data-placement="auto" data-html="true" data-original-title="&lt;h4&gt;Haku kirjaston/museon/arkiston kokoelmista&lt;/h4&gt;&lt;p&gt;Kirjoita hakukenttään teoksen nimi, tekijä, aihe tai muita asiaan liittyviä hakusanoja.&lt;/p&gt;&lt;p&gt;Katkaise hakusana tähdellä *, esim. kasvatustie*. &lt;/p&gt;&lt;p&gt;Yhdistä hakusanat Boolen operaattoreilla AND, OR ja NOT. &lt;/p&gt;&lt;p&gt;Tarkan fraasihaun voit tehdä kirjoittamalla hakusanat lainausmerkkeihin.&lt;/p&gt;&lt;p&gt;Haun jälkeen käytettävissä on lisää rajaustyökaluja.&lt;/p&gt;">
+                            <i class="fa fa-question-circle-big"></i>
+                        </button>
+                    </div>
+                    <div class="search-links">
+                        <a href="/Search/Advanced" class="btn btn-link btn-advanced"><i class="fa fa-search-adv"></i>Tarkennettu haku</a>
+
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <!-- END of: finna - search/searchbox.phtml -->
+        </div>
+    </div>
+    <!-- START of: finna - search/browsebar.phtml -->
+    <div class="browsebar">
+        <div class="container">
+
+            <nav class="navbar">
+                <span class="browsebar-title">Selaa</span>
+                <div class="wrapper resize-drag nav-wrapper">
+                    <ul class="nav navbar-nav nav-ul">
+                        <li><a class="iconlabel format-1bookbook" href="https://www.ellibslibrary.com/lappi/" target="_blank">E-kirjat</a></li>
+                        <li><a class="iconlabel format-0note" href="http://populappi.rovaniemi.fi/" target="_blank">Populappi</a></li>
+                        <li><a class="iconlabel format-1bookbook" href="https://www.celianet.fi/" target="_blank">Celianet</a></li>
+                        <li><a class="iconlabel format-0note" href="https://rovaniemi.naxosmusiclibrary.com" target="_blank">Naxos</a></li>
+                        <li><a class="iconlabel format-1journalarticle" href="https://www.pressreader.com/" target="_blank">PressReader</a></li>
+                        <li><a class="iconlabel format-1mapmap" href="https://varaamo.lapinkirjasto.fi/" target="_blank"> Varaamo</a></li>
+
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- END of: finna - search/browsebar.phtml -->          </section>
+
+<section role="main" class="main template-dir-search template-name-home">
+    <div id="content" class="container main-content">
+        <!-- START of: finna - search/home.phtml -->
+        <!--  Begin home.phtml and close page container for extra styling  -->
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div>
+            </div>
+        </div>
+    </div>
+    <!-- Create different sections for home page (home-1 - home-10) -->
+    <div class="container-fluid home-1">
+        <div class="container">
+            <!-- START of: finna - search/home/home-1.phtml -->
+            <div class="left-column-content">
+                <div class="nostoleft">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <!-- START of: finna - Helpers/feed.phtml -->
+                            <div class="feed-container" data-feed="tapahtumat"></div>
+                            <!-- END of: finna - Helpers/feed.phtml -->
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- START of: finna - Helpers/feed.phtml -->
+                            <div class="feed-container" data-feed="uutiset"></div>
+                            <!-- END of: finna - Helpers/feed.phtml -->
+                        </div>
+                    </div>
+                </div>  </div>
+            <div class="right-column-content">
+                <div class="col-xs-12">
+                    <div class="organisation-info with-details" data-parent="Lapinkirjasto" data-target="widget" data-init="1">
+                        <div>
+                            <h2>Aukioloajat</h2>
+                        </div>
+                        <div>
+                            <div class="loader"><i class="fa fa-spin fa-spinner"></i></div>
+                        </div>
+                        <div class="content hide">
+                            <div class="info-col info">
+                                <div class="organisation-dropdown-holder">
+                                    <div class="organisation dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><input type="hidden"><span></span><i class="fa fa-arrow-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span class="is-open open info-element">Auki</span>
+                                <span class="is-open closed info-element">Kiinni</span>
+                                <div class="info schedules">
+                                    <div class="week-navi-holder">
+                                        <i class="fa fa-arrow-left prev-week week-navi" data-dir="-1"></i>
+                                        <span class="week-text">Viikko <span class="num"></span></span>
+                                        <i class="fa fa-arrow-right next-week week-navi" data-dir="+1"></i>
+                                    </div>
+                                    <div class="loader"><i class="fa fa-spin fa-spinner"></i></div>
+
+                                    <div class="content">
+                                        <div class="opening-times-week">
+                                            <div class="day-container template hide"></div>
+
+                                            <div class="time-row template hide">
+                                                <div class="cell date"></div>
+                                                <div class="cell description">
+                                                    <span class="name"></span><span class="name-staff">Henkilökunta paikalla</span><span class="info"></span><span class="selfservice-only hide">(omatoimi)</span>
+                                                </div>
+                                                <div class="cell time-container">
+                                                    <div class="cell time-template">
+                                                        <span class="period"><span class="opens"></span> - <span class="closes"></span></span>
+                                                        <span class="closed-today hide">Kiinni</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="no-schedules info-element">Ei tietoja</div>
+                                    <div class="mobile-schedule-link-template hide" aria-hidden="true"><a href="#" target="_blank">Template link</a></div>
+                                    <div class="mobile-schedules info-element"></div>
+                                </div>
+                                <div class="schedules-info info-element"></div>
+                            </div>
+                            <div class="details details-col">
+                                <a href="#" data-href="&#x2F;OrganisationInfo&#x2F;Home" class="facility details"><img src="/themes/finna2/images/noCover2.gif?_=1556265849" alt="" class="facility-image"></a>
+                                <div class="contact-links">
+                                    <a href="#" class="email info-element"><span class="btn btn-open-widget"><i class="fa fa-at"></i><span class="sr-only">Sähköposti</span></span></a>
+                                    <span class="btn btn-open-widget phone info-element" data-toggle="tooltip" data-placement="bottom" data-html="true" data-original-title=""><i class="fa fa-phone-square"></i><span class="sr-only">organisation_phone_numbers</span></span>
+                                    <a href="#" target="_blank" class="route info-element"><span class="btn"><i class="fa fa-bus"></i><span class="sr-only">Reittiohjeet</span></span></a>
+                                    <a href="#" target="_blank" class="facebook info-element"><span class="btn"><i class="fa fa-facebook-square"></i><span class="sr-only">Facebook</span></span></a>
+                                </div>
+                                <div class="map info-element"><a href="#" target="_blank"><i class="fa fa-map-marker"></i> <span class="map-address"></span></a></div>
+                                <div class="details-link info-element"><a href="#" data-href="&#x2F;OrganisationInfo&#x2F;Home" class="details"><i class="fa fa-home"></i> Palvelupisteen tiedot</a></div>
+                                <div class="services">
+        <span class="btn btn-open-widget btn-round service-wifi info-element" title="Langaton verkko">
+          <i class="fa fa-wifi"></i>
+          <span class="sr-only">Langaton verkko</span>
+        </span>
+                                    <span class="btn btn-open-widget btn-round service-print info-element" title="Tulostin">
+          <i class="fa fa-print"></i>
+          <span class="sr-only">Tulostin</span>
+        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  </div>
+            <!-- END of: finna - search/home/home-1.phtml -->
+        </div>
+    </div>
+    <div class="container-fluid home-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-12">
+                </div>
+            </div>
+
+
+            <div class="row">
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-xs-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid home-3">
+        <div class="container">
+            <!-- START of: finna - search/home/home-3.phtml -->
+            <div class="col-xs-12"><h2></h2></div>
+
+            <div class="col-xs-12"><!-- START of: finna - Helpers/feed.phtml -->
+                <div class="feed-container" data-feed="Teoskaruselli"></div>
+                <!-- END of: finna - Helpers/feed.phtml -->
+            </div>
+            <div class="col-xs-12"><!-- START of: finna - Helpers/feed.phtml -->
+                <div class="feed-container" data-feed="Valikoimakaruselli"></div>
+                <!-- END of: finna - Helpers/feed.phtml -->
+            </div>
+
+            <!-- END of: finna - search/home/home-3.phtml -->
+        </div>
+    </div>
+    <div class="container-fluid home-4">
+        <div class="container">
+            <!-- START of: finna - search/home/home-4.phtml -->
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="infobox">
+                        <div style="position: relative; padding-bottom: 90%; padding-top: 25px; height: 0;"><iframe src="https://gfx.kirjastot.fi/kifi/kirjallisuus.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="infobox">
+
+                        <div class="kirjastohaku row">
+                            <div class="col-xs-12">
+                                <h2>Lapin kirjastoon kuuluvat kaikki Lapin kuntien kirjastot</h2>
+                            </div>
+                            <div class="col-sm-14col-xs-14">
+                                <a href="" TARGET="_blank"><img src="" width="90px" align="center"></a>
+                            </div>
+                            <div class="col-sm-14 col-xs-14">
+                                <ul class="list-bullets">
+                                    <li>Voit käyttää kaikissa kirjastoissa samaa kirjastokorttia</li>
+                                    <li>Voit varata teoksia mistä tahansa kirjastosta</li>
+                                    <li>Voit palauttaa lainat mihin tahansa Lapin kirjastoon </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="infobox">
+
+                        <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; border: 0;"><iframe src="https://gfx.kirjastot.fi/kifi/kolme-kysymysta-kirjastosta.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" ></iframe></div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- END of: finna - search/home/home-4.phtml -->
+
+        </div>
+    </div>
+    <!-- reopen container -->
+    <div class="container">
+        <!-- END of: finna - search/home.phtml -->
+    </div>
+</section>
+<footer class="hidden-print">
+    <div class="container">
+        <!-- START of: finna - footer.phtml -->
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h5><strong>Tietoa</strong></h5>
+                <ul>
+                    <li><a href="/Content/about">Tietoa Lapin kirjastosta</a></li>
+                    <li><a href="/Content/about_finna">Mikä Finna on?</a></li>
+                    <li><a href="/Content/terms">Käyttöehdot</a></li>
+                    <li><a href="/Content/privacy">Tietosuoja</a></li>
+                    <li><a href="/Content/rekisteriselosteet">Tietosuojaseloste</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5><strong>Hae lisää</strong></h5>
+                <ul>
+                    <li><a href="/Search/History">Hakuhistoria</a></li>
+                    <li><a href="/Search/Advanced">Tarkennettu haku</a></li>
+                    <li><a href="/Browse/Home">Selaa luetteloa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5><strong>Tarvitsetko apua?</strong></h5>
+                <ul>
+                    <li><a href="/Content/help" title="Hakuohje">Ohje</a></li>
+                    <li><a href="/Feedback/Home">Palaute</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!----------------------------- 1st row ------------------------------->
+
+        <div class="footer-container">
+            <!-- YLEISET KIRJASTOT -->
+            <div class="footer-column">
+                <a href="#" title="Yleiset kirjastot">
+                    <img src="/themes/custom/images/finna_yleisetkirjastot.png" alt=""/>
+                    <span class="sr-only">Yleiset kirjastot</span>
+                </a>
+                <br>
+                <br>
+            </div>
+
+            <!-- KIRJASAMPO -->
+            <div class="footer-column">
+                <a href="https://www.kirjasampo.fi" title="Kirjasampo">
+                    <img src="/themes/custom/images/finna_kirjasampo.png" alt=""/>
+                    <span class="sr-only">Kirjasampo</span>
+                </a>
+                <br>
+                <br>
+            </div>
+
+            <!-- KYSY KIRJASTONHOITAJALTA -->
+            <div class="footer-column">
+                <a href="https://www.kirjastot.fi/kysy" title="Kysy kirjastonhoitajalta">
+                    <img src="/themes/custom/images/finna_kysykirjastonhoitajalta.png" alt=""/>
+                    <span class="sr-only">Kysy kirjastonhoitajalta</span>
+                </a>
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+        <!--Jos haluat logorivien välille tilaa niin lisää <br><br> -tagit ----->
+        <!------------------------------ 2nd row ------------------------------->
+
+
+        <div class="footer-container">
+
+            <!-- FINNA -->
+            <div class="footer-column">
+                <a href="/Content/about_finna"><img src="/themes/finna2/images/powered-by-finna_fi-black.png?_=1556265849" alt="Finna-logo" /></a>
+                <span class="sr-only">Tietoa Finnasta</span>
+                </a>
+                <br>
+                <br>
+            </div>
+
+            <!-- VUFIND -->
+            <div class="footer-column">
+                <a href="https://vufind.org/" title="About VuFind">
+                    <img src="/themes/finna2/images/vufind-logo-black.png" alt=""/>
+                    <span class="sr-only">About VuFind</span>
+                </a>
+                <br>
+                <br>
+            </div>
+
+            <!-- LAPIN KIRJASTO -->
+            <div class="footer-column">
+                <a href="#" title="Lapin kirjasto">
+                    <img src="/themes/custom/images/finna_lapinkirjasto.png" alt=""/>
+                    <span class="sr-only">Lapin kirjasto</span>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- END of: finna - footer.phtml -->              </div>
+</footer>
+<!-- MODAL IN CASE WE NEED ONE -->
+<div id="modal" class="modal fade hidden-print" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="sr-only">sulje</span></button>
+            <div class="modal-body">Ladataan...</div>
+        </div>
+    </div>
+</div>
+<script >
+    //<!--
+
+function initVuFindPiwikTracker1557565825992(){
+    var VuFindPiwikTracker = Piwik.getTracker();
+
+    VuFindPiwikTracker.setSiteId(3001);
+    VuFindPiwikTracker.setTrackerUrl('https://piwik.finna.fi/piwik.php');
+    VuFindPiwikTracker.setCustomUrl('https\x3A\x2F\x2Flapinkirjasto.finna.fi\x2F');
+    VuFindPiwikTracker.trackPageView();
+    VuFindPiwikTracker.enableLinkTracking();
+};
+(function(){
+    if (typeof Piwik === 'undefined') {
+        var d=document, g=d.createElement('script'),
+            s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.defer=true; g.async=true;
+        g.src='https://piwik.finna.fi/piwik.js';
+        g.onload=initVuFindPiwikTracker1557565825992;
+        s.parentNode.insertBefore(g,s);
+    } else {
+        initVuFindPiwikTracker1557565825992();
+    }
+})();
+    //-->
+</script>          <div class="container-fluid general-post-body">
+    <div class="container">
+        <div>
+            <div>
+                <!-- START of: finna - layout/Additions/general-post-body.phtml -->
+
+                <!-- END of: finna - layout/Additions/general-post-body.phtml -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<!-- END of: finna - layout/layout.phtml -->

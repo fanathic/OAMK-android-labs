@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">lab3_4</string>
+    <string name="title_activity_timer_countdown">TimerCountdownActivity</string>
+</resources>
