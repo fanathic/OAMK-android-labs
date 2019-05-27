@@ -2,7 +2,6 @@ package com.example.mobitl_lab_1_3;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        //StrictMode.setThreadPolicy(policy);
+        StrictMode.ThreadPolicy policy =  new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
         buttonGo = findViewById(R.id.button_go);
         inputURL = findViewById(R.id.url_editText);
@@ -42,21 +41,16 @@ public class MainActivity extends AppCompatActivity {
         buttonGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                URL url = null;
-                try {
-                    url = new URL(inputURL.getText().toString());
-                } catch (Exception ex) {
-
-                }
-                new LoadTextualContentFromWebTask().execute(url);
+                loadTextualContentFromWeb();
             }
         });
+
 
 
     }
 
     private void loadTextualContentFromWeb() {
-        try {
+        try{
             URL url = new URL(inputURL.getText().toString());
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
             try {
@@ -79,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             ByteArrayOutputStream bo = new ByteArrayOutputStream();
             int i = is.read();
-            while (i != -1) {
+            while(i != -1) {
                 bo.write(i);
                 i = is.read();
             }
@@ -87,48 +81,5 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             return "";
         }
-    }
-
-
-    private class LoadTextualContentFromWebTask extends AsyncTask<URL, Integer, String> {
-        protected String doInBackground(URL... urls) {
-            try {
-                HttpURLConnection urlConnection = (HttpURLConnection) urls[0].openConnection();
-                try {
-
-                    InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-                    return (readStream(in));
-
-                } catch (IOException ex) {
-
-                } finally {
-                    urlConnection.disconnect();
-                }
-            } catch (Exception ex) {
-
-            }
-            return "Something went wrong";
-        }
-
-        private String readStream(InputStream is) {
-            try {
-                ByteArrayOutputStream bo = new ByteArrayOutputStream();
-                int i = is.read();
-                while (i != -1) {
-                    bo.write(i);
-                    i = is.read();
-                }
-                return bo.toString();
-            } catch (IOException e) {
-                return "";
-            }
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-            webContent.setText(result);
-        }
-
-
     }
 }
